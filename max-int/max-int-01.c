@@ -1,7 +1,10 @@
 /*
-** What is the maximal integer value.
+** What is the maximal integer value on this machine?
+**
 ** You only knows the basics of printf and sizeof
-** and you don't know if, for, while...
+** and you don't know if, switch, for, while...
+**
+** We will use if, but not switch...
 */
 
 #include <stdio.h>
@@ -12,18 +15,18 @@ int main() {
     // the C program is running on
     //
     // Languages like Java or Rust handle this better....
-      
+
     unsigned long size_of_int_in_bytes = sizeof(int);
     printf("What is max int on this machine?\n");
     printf("\n");
     printf("The size (in bytes) of an int of this machine is %lu. \n" , size_of_int_in_bytes);
     printf("You have %lu bits to represent a signed integer on this machine.\n" , size_of_int_in_bytes * 8);
-    printf("A binary represenation of the max integer on this machine is a '0' followed by %lu '1'\n"  , size_of_int_in_bytes * 8 -1);
+    printf("A binary represenation of the max integer on this machine is a '0' followed by %lu '1'\n"  , (size_of_int_in_bytes * 8) - 1);
     printf("\n");
-    printf("As I learned C - 30 years ago - the 'normal' max int was:\n");
+    printf("As I learned C - more than 30 years ago - the 'normal' max int was:\n");
     printf("0111 1111 1111 1111\n");
     printf("\n");
-    printf("Today - 30 years later - the situation is different :-P\n");
+    printf("Today - more than 30 years later - the situation is different :-P\n");
     printf("0111 1111 1111 1111 1111 1111 1111 1111\n");
     printf("\n");
     int max = 0;
