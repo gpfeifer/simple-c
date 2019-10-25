@@ -11,8 +11,8 @@ int main() {
     // The size of an int in C depends on the machine/OS 
     // the C program is running on
     //
-    // Modern languages like Java or Rust have a better
-    // concept here  
+    // Languages like Java or Rust handle this better....
+      
     unsigned long size_of_int_in_bytes = sizeof(int);
     printf("What is max int on this machine?\n");
     printf("\n");
